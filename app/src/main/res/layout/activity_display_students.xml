@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activities.DisplayStudentsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewClassName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Nom de la classe"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewStudents"
+                android:layout_width="177dp"
+                android:layout_height="669dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonimporter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Importer les étudiants" />
+
+            <Button
+                android:id="@+id/buttonroutour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="retour" />
+
+            <Button
+                android:id="@+id/buttonMettreAbsence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mettre Absence" />
+
+
+
+            <Button
+                android:id="@+id/buttonCreateStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="423dp"
+                android:text="Ajouter un étudiant" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

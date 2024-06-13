@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextStudentFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Prénom de l'étudiant" />
+
+        <EditText
+            android:id="@+id/editTextStudentLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nom de l'étudiant" />
+
+        <EditText
+            android:id="@+id/editTextStudentCNE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="CNE de l'étudiant"
+            android:inputType="text" />
+
+
+
+        <EditText
+            android:id="@+id/editTextStudentDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Date de naissance (JJ/MM/AAAA)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="nom de la class"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAddStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="handleAddStudent"
+                android:text="Ajouter" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
